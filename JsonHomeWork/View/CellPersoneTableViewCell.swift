@@ -14,7 +14,6 @@ class CellPersoneTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
 
-    
     func configure(persone: Character) {
         nameLabel.text = "Name \(persone.name ?? "No")"
         statusLabel.text = "Status \(persone.status ?? "No")"
@@ -28,7 +27,4 @@ class CellPersoneTableViewCell: UITableViewCell {
             }
         }
     }
-    
-    
-
 }
