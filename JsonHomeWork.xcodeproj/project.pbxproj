@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		76782095280C38C900D40E83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76782094280C38C900D40E83 /* AppDelegate.swift */; };
 		76782097280C38C900D40E83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76782096280C38C900D40E83 /* SceneDelegate.swift */; };
-		76782099280C38C900D40E83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76782098280C38C900D40E83 /* ViewController.swift */; };
+		76782099280C38C900D40E83 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76782098280C38C900D40E83 /* InfoViewController.swift */; };
 		7678209C280C38C900D40E83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7678209A280C38C900D40E83 /* Main.storyboard */; };
 		7678209E280C38CA00D40E83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7678209D280C38CA00D40E83 /* Assets.xcassets */; };
 		767820A1280C38CA00D40E83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7678209F280C38CA00D40E83 /* LaunchScreen.storyboard */; };
+		767820AD280C39FE00D40E83 /* CellPersoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767820AC280C39FE00D40E83 /* CellPersoneTableViewCell.swift */; };
+		767820AF280C3A5200D40E83 /* PersoneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767820AE280C3A5200D40E83 /* PersoneTableViewController.swift */; };
+		76FBE795280C5B1F00E077B7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBE794280C5B1F00E077B7 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		76782091280C38C900D40E83 /* JsonHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonHomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76782094280C38C900D40E83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76782096280C38C900D40E83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		76782098280C38C900D40E83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		76782098280C38C900D40E83 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		7678209B280C38C900D40E83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7678209D280C38CA00D40E83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		767820A0280C38CA00D40E83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		767820A2280C38CA00D40E83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		767820AC280C39FE00D40E83 /* CellPersoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPersoneTableViewCell.swift; sourceTree = "<group>"; };
+		767820AE280C3A5200D40E83 /* PersoneTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersoneTableViewController.swift; sourceTree = "<group>"; };
+		76FBE794280C5B1F00E077B7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		76782093280C38C900D40E83 /* JsonHomeWork */ = {
 			isa = PBXGroup;
 			children = (
-				76782094280C38C900D40E83 /* AppDelegate.swift */,
-				76782096280C38C900D40E83 /* SceneDelegate.swift */,
-				76782098280C38C900D40E83 /* ViewController.swift */,
-				7678209A280C38C900D40E83 /* Main.storyboard */,
-				7678209D280C38CA00D40E83 /* Assets.xcassets */,
-				7678209F280C38CA00D40E83 /* LaunchScreen.storyboard */,
-				767820A2280C38CA00D40E83 /* Info.plist */,
+				76FBE793280C5B0200E077B7 /* Model */,
+				767820A9280C393900D40E83 /* App */,
+				767820A8280C392A00D40E83 /* View */,
+				767820AA280C394500D40E83 /* Storyboar */,
+				767820AB280C395600D40E83 /* Assets */,
 			);
 			path = JsonHomeWork;
+			sourceTree = "<group>";
+		};
+		767820A8280C392A00D40E83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				767820AE280C3A5200D40E83 /* PersoneTableViewController.swift */,
+				767820AC280C39FE00D40E83 /* CellPersoneTableViewCell.swift */,
+				76782098280C38C900D40E83 /* InfoViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		767820A9280C393900D40E83 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				76782094280C38C900D40E83 /* AppDelegate.swift */,
+				76782096280C38C900D40E83 /* SceneDelegate.swift */,
+				767820A2280C38CA00D40E83 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		767820AA280C394500D40E83 /* Storyboar */ = {
+			isa = PBXGroup;
+			children = (
+				7678209A280C38C900D40E83 /* Main.storyboard */,
+				7678209F280C38CA00D40E83 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboar;
+			sourceTree = "<group>";
+		};
+		767820AB280C395600D40E83 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7678209D280C38CA00D40E83 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		76FBE793280C5B0200E077B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				76FBE794280C5B1F00E077B7 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +187,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76782099280C38C900D40E83 /* ViewController.swift in Sources */,
+				767820AD280C39FE00D40E83 /* CellPersoneTableViewCell.swift in Sources */,
+				767820AF280C3A5200D40E83 /* PersoneTableViewController.swift in Sources */,
+				76782099280C38C900D40E83 /* InfoViewController.swift in Sources */,
+				76FBE795280C5B1F00E077B7 /* Model.swift in Sources */,
 				76782095280C38C900D40E83 /* AppDelegate.swift in Sources */,
 				76782097280C38C900D40E83 /* SceneDelegate.swift in Sources */,
 			);
@@ -289,7 +341,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N85MKK397C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = JsonHomeWork/Info.plist;
+				INFOPLIST_FILE = JsonHomeWork/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +369,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N85MKK397C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = JsonHomeWork/Info.plist;
+				INFOPLIST_FILE = JsonHomeWork/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
