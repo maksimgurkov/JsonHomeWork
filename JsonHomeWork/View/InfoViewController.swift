@@ -24,8 +24,8 @@ class InfoViewController: UIViewController {
         configure(persone: persone)
     }
         
-    func configure(persone: Character) {
-            fetchImage(from: persone.image ?? "nil")
+   private func configure(persone: Character) {
+            fetchImage(from: persone.image ?? "Nil")
             self.namePersoneLabel.text = "Name \(persone.name ?? "No")"
             self.statusPersoneLabel.text = "Status \(persone.status ?? "No")"
             self.speciesPersoneLabel.text = "Species \(persone.species ?? "No")"
@@ -34,12 +34,9 @@ class InfoViewController: UIViewController {
     }
     
     private func fetchImage(from imageUrl: String) {
-        DispatchQueue.global().async {
-            guard let url = URL(string: imageUrl) else { return }
-            guard let imageData = try? Data(contentsOf: url) else { return }
-            DispatchQueue.main.async {
-                self.imagePersone.image = UIImage(data: imageData)
-            }
+        guard let imageResult = ImageManager.shered.fetchImage(from: imageUrl) else { return }
+        DispatchQueue.main.async {
+            self.imagePersone.image = UIImage(data: imageResult)
         }
     }
 }

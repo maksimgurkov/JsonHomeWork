@@ -13,8 +13,8 @@ class PersoneTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchData()
-
+        
+        fetchData(from: Linc.rickAndMorty.rawValue)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -34,28 +34,12 @@ class PersoneTableViewController: UITableViewController {
         cell.personeImage.layer.cornerRadius = 20
         return cell
     }
-    
-    private func fetchData() {
-        guard let url = URL(string: Linc.rickAndMorty.rawValue) else { return }
-        URLSession.shared.dataTask(with: url) { data, _, error in
-            guard let data = data else {
-                print(error?.localizedDescription ?? "No error")
-                return
-            }
-            
-            do {
-                
-                let results = try JSONDecoder().decode(RickAndMorty.self, from: data)
-                self.persons = results.results
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-
-            } catch let error {
-                print(error.localizedDescription)
-            }
-
-        }.resume()
+        
+    private func fetchData(from url: String?) {
+        NetworkManager.shared.fetchData(from: url) { rickAndMorty in
+            self.persons = rickAndMorty.results
+            self.tableView.reloadData()
+        }
     }
     
 }

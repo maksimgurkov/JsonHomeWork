@@ -15,6 +15,7 @@
 		767820A1280C38CA00D40E83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7678209F280C38CA00D40E83 /* LaunchScreen.storyboard */; };
 		767820AD280C39FE00D40E83 /* CellPersoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767820AC280C39FE00D40E83 /* CellPersoneTableViewCell.swift */; };
 		767820AF280C3A5200D40E83 /* PersoneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767820AE280C3A5200D40E83 /* PersoneTableViewController.swift */; };
+		76F0AC51280F30B60072556B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F0AC50280F30B60072556B /* NetworkManager.swift */; };
 		76FBE795280C5B1F00E077B7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FBE794280C5B1F00E077B7 /* Model.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		767820A2280C38CA00D40E83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		767820AC280C39FE00D40E83 /* CellPersoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPersoneTableViewCell.swift; sourceTree = "<group>"; };
 		767820AE280C3A5200D40E83 /* PersoneTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersoneTableViewController.swift; sourceTree = "<group>"; };
+		76F0AC50280F30B60072556B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		76FBE794280C5B1F00E077B7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +64,7 @@
 		76782093280C38C900D40E83 /* JsonHomeWork */ = {
 			isa = PBXGroup;
 			children = (
+				76F0AC4F280F30870072556B /* NetworkManger */,
 				76FBE793280C5B0200E077B7 /* Model */,
 				767820A9280C393900D40E83 /* App */,
 				767820A8280C392A00D40E83 /* View */,
@@ -106,6 +109,14 @@
 				7678209D280C38CA00D40E83 /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		76F0AC4F280F30870072556B /* NetworkManger */ = {
+			isa = PBXGroup;
+			children = (
+				76F0AC50280F30B60072556B /* NetworkManager.swift */,
+			);
+			path = NetworkManger;
 			sourceTree = "<group>";
 		};
 		76FBE793280C5B0200E077B7 /* Model */ = {
@@ -190,6 +201,7 @@
 				767820AD280C39FE00D40E83 /* CellPersoneTableViewCell.swift in Sources */,
 				767820AF280C3A5200D40E83 /* PersoneTableViewController.swift in Sources */,
 				76782099280C38C900D40E83 /* InfoViewController.swift in Sources */,
+				76F0AC51280F30B60072556B /* NetworkManager.swift in Sources */,
 				76FBE795280C5B1F00E077B7 /* Model.swift in Sources */,
 				76782095280C38C900D40E83 /* AppDelegate.swift in Sources */,
 				76782097280C38C900D40E83 /* SceneDelegate.swift in Sources */,
